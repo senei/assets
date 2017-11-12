@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content=""/>
+        <meta name="author" content="senei" />
+
+        <title>senei web</title>
+
+        <link rel="apple-touch-icon" sizes="144x144" href="icon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="icon/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="icon/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="icon/manifest.json">
+        <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5">
+
+        <link href="https://fonts.googleapis.com/css?family=Trade+Winds" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+      <header>
+
+      </header>
+      <main id="content">
+        <h1>
+          As good advertising comes from the product,<br/>
+          and good filmmaking begins with a riveting story,<br/>
+          good web design starts with content.<br/>
+          <small>– Jeffrey Zeldman</small>
+        </h1>
+        <div id="app">
+  <h1>Hello App!</h1>
+  <p>
+    <!-- use router-link component for navigation. -->
+    <!-- specify the link by passing the `to` prop. -->
+    <!-- <router-link> will be rendered as an `<a>` tag by default -->
+    <router-link to="/foo">Go to Foo</router-link>
+    <router-link to="/bar">Go to Bar</router-link>
+  </p>
+  <!-- route outlet -->
+  <!-- component matched by the route will render here -->
+  <router-view></router-view>
+</div>
+      </main>
+      <footer>
+      </footer>
+
+        <!-- scrips -->
+        <script src="js/vendor.js"></script>
+        <script src="js/script.js"></script>
+        <script>require('initialize');</script>
+        <script>require('app');</script>
+    </body>
+</html>
